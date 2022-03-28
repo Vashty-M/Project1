@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+
+<section class="brands">
+    <div class="container">
+
+        <h5 class="text-center font-weight-bold ">Our Partners</h5>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="Unilever.jpg" alt="logo"></div>
+            <div class="slide"><img src="luronicon.png" alt="logo"></div>
+            <div class="slide"><img src="Revlonicon.png" alt="logo"></div>
+            <div class="slide"><img src="Ashley%20icon.png" alt="logo"></div>
+            <div class="slide"><img src="beauty%20click.png" alt="logo"></div>
+            <div class="slide"><img src="imperialicon.png" alt="logo"></div>
+            <div class="slide"><img src="kiss%20beautyicon.png" alt="logo"></div>
+        </section>
+
+    </div>
+
+</section>
+
+<p class="copy text-center font-weight-bold">All Rights Reserved &copy;Vash Beauty Shop</p>
+
+<script>
+    $(document).ready(function () {
+        $('.customer-logos').slick(
+            {
+                slidesToshow:6,
+                slidesToScroll:1
+                autoplay: true,
+                arrows:false,
+                dots:false,
+                PauseOnHover:false,
+                responsive:[{
+                    breakpoint:768,
+                    setting:{
+                        slidesToshow: 3
+                    }
+                }]
+            });
+
+    });
+
+</body>
+</html>
